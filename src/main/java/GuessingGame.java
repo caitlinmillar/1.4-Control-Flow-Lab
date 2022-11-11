@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class GuessingGame {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         String guessingCommand = "Guess my secret number!";
         {
@@ -12,12 +12,18 @@ public class GuessingGame {
             int guess = reader.nextInt();
             System.out.println("Your guess is " + guess);
 
+            if (guess < secretNumber) {
+                System.out.println("Too low");
+            } else if (guess > secretNumber) {
+                System.out.println("Too high");
 
-            if (guess == secretNumber) {
+            } else if (guess == secretNumber) {
                 System.out.println("You got it right!");
-            } else {
-                System.out.println("You got it wrong!");
             }
+        }
+    }
+}
 
-        }}}
+
+
 

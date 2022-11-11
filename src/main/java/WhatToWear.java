@@ -1,9 +1,11 @@
 import java.util.Scanner;
 
-class WhatToWear {
+public class WhatToWear {
     Scanner scanner = new Scanner(System.in);
+
     WhatToWear() {
-        {int temperatureInput = scanner.nextInt();
+        {
+            int temperatureInput = scanner.nextInt();
             String weather = scanner.next();
         }
     }
@@ -19,14 +21,13 @@ class WhatToWear {
         var coldInput = "Make sure you wear a coat and wrap up warm.";
         var hotInput = "Bring a hat and wear light clothes.";
 
-        if (temperatureInput <=18){
+        if (temperatureInput <= 18) {
             System.out.print(coldInput);
-        }
-        else if (temperatureInput > 19){
+        } else if (temperatureInput > 19) {
             System.out.print(hotInput);
         }
         String rain = "raining";
-        String sun ="sunny";
+        String sun = "sunny";
         var rainInput = "Don't forget your umbrella!";
         var sunInput = "Grab a hat and some suncream!";
         {
@@ -34,16 +35,12 @@ class WhatToWear {
             System.out.println(" Is it raining or sunny?");
             String weatherInput = reader.next();
             reader.nextLine();
-            if (weatherInput.equals(sun)){
+            if (weatherInput.equals(sun)) {
                 System.out.println(sunInput);
-            }
-            else if (weatherInput.equals(rain)) {
+            } else if (weatherInput.equals(rain)) {
                 System.out.println(rainInput);
             }
-
-
-
-
         }
-    }}
+    }
+}
 
