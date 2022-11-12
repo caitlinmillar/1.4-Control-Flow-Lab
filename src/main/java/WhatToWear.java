@@ -39,6 +39,13 @@ public class WhatToWear {
                 System.out.println(sunInput);
             } else if (weatherInput.equals(rain)) {
                 System.out.println(rainInput);
+
+                Boolean Rain = true;
+                Boolean Cold = true;
+
+                if (Rain && Cold){
+                    System.out.println("I mean since it's raining AND it's cold, you should just stay home :(");
+                }
             }
         }
     }
